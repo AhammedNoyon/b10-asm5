@@ -1,12 +1,11 @@
 // login blog html file
 document.getElementById("blog-btn").addEventListener("click", function () {
-  // console.log("hello i am blog button");
   window.location.href = "blog.html";
 });
 
 const firstCardHeader = document.getElementById("first-card-header").innerText;
 const currentDateTime = new Date().toString();
-console.log(currentDateTime);
+// console.log(currentDateTime);
 // card 1
 document
   .getElementById("first-card-donate-btn")
@@ -24,9 +23,11 @@ document
 
     const updateNavbarBDT = navbarBDT - firstCardInputAmount;
     document.getElementById("nav-bdt").innerText = updateNavbarBDT;
-
+    // modal
+    document.getElementById("my_modal_1").showModal();
     document.getElementById("card-one-input").value = "";
-    // add transaction by first card
+
+    // add transaction history by first card
     const div = document.createElement("div");
     div.classList.add("border");
     div.classList.add("p-8");

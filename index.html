@@ -113,32 +113,59 @@
                 </h1>
               </button>
             </div>
-            <h2
-              id="first-card-header"
-              class="my-4 font-bold text-xl tex-secondary"
-            >
-              Donate for Flood at Noakhali, Bangladesh
-            </h2>
-            <p class="text-base font-light text-descColor">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
-            </p>
-            <input
-              id="card-one-input"
-              type="text"
-              placeholder="Write Donation Amount"
-              class="input input-bordered w-full mt-7 mb-5 py-3"
-            />
-            <button
-              id="first-card-donate-btn"
-              class="py-4 rounded-lg bg-primaryColor w-full text-secondary text-xl font-semibold"
-            >
-              Donate now
-            </button>
+            <div>
+              <h2
+                id="first-card-header"
+                class="my-4 font-bold text-xl tex-secondary"
+              >
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p class="text-base font-light text-descColor">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <input
+                id="card-one-input"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full mt-7 mb-5 py-3"
+              />
+              <button
+                id="first-card-donate-btn"
+                class="py-4 rounded-lg bg-primaryColor w-full text-secondary text-xl font-semibold"
+                onclick="my_modal_1"
+              >
+                Donate now
+              </button>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+
+            <div>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box mx-auto text-center">
+                  <h3 class="text-3xl font-bold text-secondary">Congrats!</h3>
+                  <img class="mx-auto mt-4" src="./assets/coin.png" alt="" />
+                  <p class="uppercase text-lg font-medium text-descColor mt-6">
+                    you have donated for humankind
+                  </p>
+                  <h3 class="text-xl font-bold text-secondary mb-4">
+                    Successfully
+                  </h3>
+                  <div class="">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn text-lg text-secondary font-medium">
+                        Close confirmation
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
           </div>
         </div>
         <!-- card 2 -->
@@ -261,9 +288,9 @@
         <!-- card 4 -->
       </section>
       <!-- History button section -->
-      <section id="history-btn-section" class="space-y-4 mb-8"></section>
+      <section id="history-btn-section" class="space-y-4 mb-8 hidden"></section>
     </main>
-    <footer class="bg-navBg py-16 hidden"></footer>
+    <footer class="bg-navBg py-16"></footer>
     <script src="./js/shared.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/script2.js"></script>

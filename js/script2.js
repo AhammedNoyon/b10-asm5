@@ -16,7 +16,8 @@ document
 
     const updateNavbarBDTByCard2 = navbarBDTForCard2 - secondCardInputValue;
     document.getElementById("nav-bdt").innerText = updateNavbarBDTByCard2;
-
+    // modal
+    document.getElementById("my_modal_1").showModal();
     document.getElementById("card-two-input").value = "";
 
     // add transaction by second card
