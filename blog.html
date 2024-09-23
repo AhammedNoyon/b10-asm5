@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/08635a04a3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- LaxEnd font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +29,11 @@
         theme: {
           extend: {
             colors: {
+              primaryColor: "rgb(180, 244, 97)",
+              secondary: "rgb(17, 17, 17)",
+              descColor: "rgba(17, 17, 17, 0.7)",
+              navBg: "rgb(249, 247, 243)",
+              cardBDT: "rgba(17, 17, 17, 0.05)",
               bodyBg: "rgb(255, 255, 255)",
             },
             fontFamily: {
@@ -34,35 +44,102 @@
       };
     </script>
   </head>
-  <body class="font-fontFamily bg-bodyBg">
-    <main class="w-3/5 mx-auto">
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+  <body class="font-fontFamily bg-bodyBg m-0 p-0 box-border">
+    <header class="sticky top-0 z-50">
+      <!-- navigation bar -->
+      <nav class="bg-navBg">
+        <div class="w-2/3 mx-auto flex justify-between items-center pt-6 pb-12">
+          <button id="go-home-btn" class="btn py-3 px-8 bg-primaryColor">
+            Home
+          </button>
+          <div class="flex justify-center items-center gap-4">
+            <img src="./assets/logo.png" alt="" />
+            <h3 class="text-xl font-semibold text-secondary">
+              Donate Bangladesh
+            </h3>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" />
+            <span class="text-descColor text-xl font-medium">5500</span>
+            <span class="text-descColor text-xl font-medium">BDT</span>
+          </div>
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
+      </nav>
+    </header>
+    <main class="w-3/5 mx-auto mt-20">
+      <h1 class="flex items-center gap-4 mb-4">
+        <p class="text-3xl font-bold text-secondary">Important FAQ</p>
+        <span
+          class="text-3xl font-bold text-secondary border-2 py-1 px-3 rounded-full border-secondary"
+          ><i class="fa-solid fa-question"></i
+        ></span>
+      </h1>
+      <div class="">
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p class="tex-descColor">
+              represents and interacts with the structure of HTML and XML
+              documents as a tree of objects.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              such as document.querySelector() to select the first matching
+              element using a CSS selector, document.getElementById() to select
+              an element by its unique ID, or document.getElementsByClassName()
+              to select elements with a specific class name.
+            </p>
+          </div>
         </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Is added to a parent element instead of individual listeners for
+              each child element. When an event occurs on a child element, it
+              bubbles up to the parent, allowing the parent to handle the event.
+              This approach reduces memory usage and improves performance,
+              especially with dynamic content. It also simplifies code
+              management by centralizing event handling in one place.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              I can manipulate an element's attributes and styles using the DOM
+              by accessing the element through methods like
+              document.getElementById() or document.querySelector(). To change
+              an attribute, use the setAttribute() method, such as
+              element.setAttribute('src', 'image.jpg'), or directly modify
+              properties, like element.src = 'image.jpg'. To alter styles, you
+              can use the style property, such as element.style.color = 'red' to
+              change the text color or element.style.width = '100px' to adjust
+              the width.
+            </p>
+          </div>
         </div>
       </div>
     </main>
+    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
