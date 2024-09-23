@@ -17,4 +17,19 @@ document
     document.getElementById("nav-bdt").innerText = updateNavBDTByCard3;
 
     document.getElementById("card-three-input").value = "";
+
+    // add transaction by third card
+    const thirdCardHeader =
+      document.getElementById("third-card-header").innerText;
+    const div = document.createElement("div");
+    div.classList.add("border");
+    div.classList.add("p-8");
+    div.classList.add("rounded-2xl");
+    div.classList.add("mt-8");
+
+    div.innerHTML = `
+    <h1 class = 'text-xl font-bold text-secondary'>${thirdCardInputValue} taka is ${thirdCardHeader}</h1>
+    <p class = 'text-base font-light text-descColor mt-4'>${currentDateTime}</p>
+    `;
+    document.getElementById("history-btn-section").appendChild(div);
   });
