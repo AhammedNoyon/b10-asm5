@@ -1,11 +1,4 @@
-// login blog html file
-document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "blog.html";
-});
-
-const firstCardHeader = document.getElementById("first-card-header").innerText;
 const currentDateTime = new Date().toString();
-// console.log(currentDateTime);
 // card 1
 document
   .getElementById("first-card-donate-btn")
@@ -28,6 +21,8 @@ document
     document.getElementById("card-one-input").value = "";
 
     // add transaction history by first card
+    const firstCardHeader =
+      document.getElementById("first-card-header").innerText;
     const div = document.createElement("div");
     div.classList.add("border");
     div.classList.add("p-8");
