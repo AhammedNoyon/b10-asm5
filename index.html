@@ -40,18 +40,23 @@
     </script>
   </head>
   <body class="font-fontFamily bg-bodyBg m-0 p-0 box-border">
-    <header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-100 backdrop-blur pb-8">
       <!-- navigation bar -->
       <nav class="bg-navBg">
         <div
-          class="w-11/12 lg:w-2/3 mx-auto grid grid-cols-3 gap-8 lg:flex lg:justify-between lg:items-center pt-6 pb-12"
+          class="w-11/12 lg:w-2/3 mx-auto gap-8 flex justify-between items-center pt-6 pb-12"
         >
-          <button id="blog-btn" class="btn py-3 px-8 bg-primaryColor">
+          <button
+            id="blog-btn"
+            class="btn px-8 bg-primaryColor text-xl font-semibold"
+          >
             <a href="http://127.0.0.1:5500/blog.html">Blog</a>
           </button>
           <div class="flex justify-center items-center gap-2 lg:gap-4">
             <img src="./assets/logo.png" alt="" />
-            <h3 class="lg:text-xl font-semibold text-secondary sm:text-xs">
+            <h3
+              class="hidden md:block lg:block text-xl font-semibold text-secondary"
+            >
               Donate Bangladesh
             </h3>
           </div>
@@ -64,10 +69,7 @@
           </div>
         </div>
       </nav>
-    </header>
-    <main class="w-11/12 lg:w-3/5 mx-auto">
-      <!-- Donation and History button related section  -->
-      <section class="mt-20">
+      <div class="mt-20">
         <div class="flex gap-4 justify-center">
           <button
             id="main-donation-btn"
@@ -83,9 +85,11 @@
           </button>
         </div>
         <!-- card section  -->
-      </section>
+      </div>
+    </header>
+    <main class="w-11/12 lg:w-3/5 mx-auto">
       <!-- card section -->
-      <section id="donation-btn section" class="mt-8 space-y-8 mb-20">
+      <section id="donation-btn section" class="space-y-8 mb-20">
         <!-- card 1 -->
         <div
           class="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 mx-auto p-8 bg-base-100 border rounded-2xl"
@@ -120,7 +124,9 @@
               >
                 Donate for Flood at Noakhali, Bangladesh
               </h2>
-              <p class="text-base font-light text-descColor">
+              <p
+                class="text-justify lg:text-start md:text-start text-base font-light text-descColor"
+              >
                 The recent floods in Noakhali have caused significant damage to
                 homes infrastructure. Your donation will help provide essential
                 supplies and to those affected by this disaster. Every
@@ -201,7 +207,9 @@
             >
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
-            <p class="text-base font-light text-descColor">
+            <p
+              class="text-justify lg:text-start md:text-start text-base font-light text-descColor"
+            >
               The devastating floods in Feni have left many homes and
               infrastructures damaged. Your generous donation can help deliver
               vital supplies and support to those in urgent need. Every
@@ -261,7 +269,9 @@
             >
               Aid for Injured in the Quota Movement
             </h2>
-            <p class="text-base font-light text-descColor">
+            <p
+              class="text-justify lg:text-start md:text-start text-base font-light text-descColor"
+            >
               TDuring the Quota Movement, many individuals have suffered
               injuries while standing up for their rights. Your support can
               provide essential medical assistance, care, and recovery support

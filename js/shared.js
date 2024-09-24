@@ -27,7 +27,7 @@ function showSectionByButtonClick(id) {
   const donationBtn = document.getElementById("main-donation-btn");
   const historyBtn = document.getElementById("history-btn");
   if (id === "donation-btn section") {
-    const donationBtn = document.getElementById("main-donation-btn");
+    // const donationBtn = document.getElementById("main-donation-btn");
     donationBtn.classList.add("bg-primaryColor");
     historyBtn.classList.remove("bg-primaryColor");
   }

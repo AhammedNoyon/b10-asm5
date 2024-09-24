@@ -7,7 +7,11 @@ document
     const firstCardBDT = getTextValueById("card-bdt");
     const navbarBDT = getTextValueById("nav-bdt");
 
-    if (isNaN(firstCardInputAmount) || firstCardInputAmount < 0) {
+    if (
+      isNaN(firstCardInputAmount) ||
+      firstCardInputAmount <= 0 ||
+      firstCardInputAmount > navbarBDT
+    ) {
       return alert("Invalid Donation Amount");
     }
 

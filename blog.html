@@ -45,16 +45,16 @@
     </script>
   </head>
   <body class="font-fontFamily bg-bodyBg m-0 p-0 box-border">
-    <header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-50 backdrop-blur-md">
       <!-- navigation bar -->
       <nav class="bg-navBg">
         <div
-          class="w-11/12 lg:w-2/3 mx-auto grid grid-cols-3 gap-8 lg:flex lg:justify-between items-center pt-6 pb-12"
+          class="w-11/12 lg:w-2/3 mx-auto  gap-8 flex justify-between items-center pt-6 pb-12"
         >
-          <button class="btn py-3 px-8 bg-primaryColor"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
+          <button class="btn py-3 px-8 bg-primaryColor text-xl font-semibold"><a href="http://127.0.0.1:5500/index.html">Home</a></button>
           <div class="flex justify-center items-center gap-2 lg:gap-4">
             <img src="./assets/logo.png" alt="" />
-            <h3 class="lg:text-xl font-semibold text-secondary sm:text-xs">
+            <h3 class="hidden md:block lg:block lg:text-xl font-semibold text-secondary sm:text-xs">
               Donate Bangladesh
             </h3>
           </div>
@@ -76,6 +76,7 @@
           ><i class="fa-solid fa-question"></i
         ></span>
       </h1>
+      <!-- Question and Answer related container  -->
       <div class="">
         <div class="collapse collapse-arrow bg-slate-50 border-2">
           <input type="radio" name="my-accordion-2" checked="checked" />
@@ -83,9 +84,8 @@
             What is the Document Object Model (DOM)?
           </div>
           <div class="collapse-content">
-            <p class="tex-descColor">
-              represents and interacts with the structure of HTML and XML
-              documents as a tree of objects.
+            <p class="tex-descColor text-justify md:text-start lg:text-start">
+              The Document Object Model (DOM) is a programming interface for HTML and XML documents, representing the document as a tree of nodes. It allows developers to access, modify, and manipulate the document's structure, style, and content dynamically. The DOM provides methods for selecting, creating, and editing elements and handling events, enabling interactivity on web pages. It’s essential for making dynamic and interactive websites using JavaScript.
             </p>
           </div>
         </div>
@@ -95,11 +95,8 @@
             How do you select an element from the DOM?
           </div>
           <div class="collapse-content">
-            <p>
-              such as document.querySelector() to select the first matching
-              element using a CSS selector, document.getElementById() to select
-              an element by its unique ID, or document.getElementsByClassName()
-              to select elements with a specific class name.
+            <p class="tex-descColor text-justify md:text-start lg:text-start">
+              To select an element from the DOM, you can use methods like getElementById('id') for IDs, querySelector('.class') for CSS selectors, or getElementsByClassName('class') for classes. querySelectorAll() can select multiple elements that match a selector. These methods provide the first matching element or a list of elements based on the query, allowing you to select elements accordingly.
             </p>
           </div>
         </div>
@@ -110,13 +107,8 @@
             useful?
           </div>
           <div class="collapse-content">
-            <p>
-              Is added to a parent element instead of individual listeners for
-              each child element. When an event occurs on a child element, it
-              bubbles up to the parent, allowing the parent to handle the event.
-              This approach reduces memory usage and improves performance,
-              especially with dynamic content. It also simplifies code
-              management by centralizing event handling in one place.
+            <p class="tex-descColor text-justify md:text-start lg:text-start">
+              Event delegation is a technique where a single event listener is added to a parent element to manage events for multiple child elements, using event propagation (bubbling). It’s useful because it reduces the number of event listeners, improves performance, and allows handling dynamically added elements easily.
             </p>
           </div>
         </div>
@@ -127,7 +119,7 @@
             DOM?
           </div>
           <div class="collapse-content">
-            <p>
+            <p class="tex-descColor text-justify md:text-start lg:text-start">
               I can manipulate an element's attributes and styles using the DOM
               by accessing the element through methods like
               document.getElementById() or document.querySelector(). To change
